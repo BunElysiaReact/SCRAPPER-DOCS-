@@ -1,0 +1,139 @@
+.hero_qymhg {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #080b12 0%, #0d1320 50%, #080b12 100%);
+  padding: 80px 40px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_qymhg:before {
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(circle, #00e5ff0f 0%, #0000 70%);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+}
+
+.hero_qymhg:after {
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(circle, #7c3aed12 0%, #0000 70%);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -80px;
+  left: 40px;
+}
+
+.heroInner_cfvuk {
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.badge_gnd8b {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  letter-spacing: 1px;
+  background: #00e5ff12;
+  border: 1px solid #00e5ff33;
+  border-radius: 100px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 5px 14px;
+  font-size: 11px;
+  display: inline-flex;
+}
+
+.badge_gnd8b:before {
+  content: "";
+  background: var(--accent);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  animation: 2s infinite pulse;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .5;
+    transform: scale(.8);
+  }
+}
+
+.title_gdbhq {
+  letter-spacing: -1px;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.gradient_igq8d {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: block;
+}
+
+.subtitle_h08o3 {
+  color: var(--text2);
+  max-width: 560px;
+  margin: 16px 0 32px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.actions_vbb5r {
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+  display: flex;
+}
+
+.stats_gdond {
+  flex-wrap: wrap;
+  gap: 32px;
+  display: flex;
+}
+
+.stat_qytt1 {
+  flex-direction: column;
+  display: flex;
+}
+
+.statValue_dt4lf {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel_dymr5 {
+  color: var(--text3);
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .hero_qymhg {
+    padding: 80px 20px 40px;
+  }
+
+  .stats_gdond {
+    gap: 20px;
+  }
+}

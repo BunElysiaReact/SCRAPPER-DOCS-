@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": ["../../.bertuibuild/main.js"],
+  "sourcesContent": [
+    "import React from \"react\";\nimport ReactDOM from \"react-dom/client\";\nimport { Router, routes } from \"./router.js\";\nReactDOM.createRoot(document.getElementById(\"root\")).render(React.createElement(React.StrictMode, null, React.createElement(Router, {\n  routes\n})));\n"
+  ],
+  "mappings": "qDAAA,qBACA,gCAEA,EAAS,WAAW,SAAS,eAAe,MAAM,CAAC,EAAE,OAAO,EAAM,cAAc,EAAM,WAAY,KAAM,EAAM,cAAc,EAAQ,CAClI,QACF,CAAC,CAAC,CAAC",
+  "debugId": "A7E9A87D8D2334E264756E2164756E21",
+  "names": []
+}

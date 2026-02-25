@@ -1,0 +1,161 @@
+.layout_adoj4 {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar_2hdsz {
+  width: var(--sidebar-w);
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  z-index: 100;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.main_a7knp {
+  margin-left: var(--sidebar-w);
+  flex: 1;
+  min-height: 100vh;
+}
+
+.logo_a7l0c {
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 18px;
+  text-decoration: none;
+  display: flex;
+}
+
+.logoIcon_nzngy {
+  font-size: 28px;
+}
+
+.logoText_nzuji {
+  flex-direction: column;
+  line-height: 1.2;
+  display: flex;
+}
+
+.logoName_nzqmc {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.logoVersion_wr56f {
+  color: var(--text3);
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+.nav_ovi7n {
+  flex: 1;
+  padding: 16px 10px;
+  overflow-y: auto;
+}
+
+.navSection_9wkpb {
+  margin-bottom: 20px;
+}
+
+.navLabel_osfdq {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 6px;
+  padding: 0 8px;
+  font-size: 10px;
+  font-weight: 700;
+  display: block;
+}
+
+.navLink_8d5ns {
+  color: var(--text2);
+  border-radius: 6px;
+  margin-bottom: 2px;
+  padding: 7px 10px;
+  font-size: 13.5px;
+  text-decoration: none;
+  transition: all .15s;
+  display: block;
+}
+
+.navLink_8d5ns:hover {
+  color: var(--text);
+  background: var(--bg3);
+  text-decoration: none;
+}
+
+.navLinkActive_ffdp4 {
+  border-left: 2px solid var(--accent);
+  color: var(--accent) !important;
+  background: #00e5ff14 !important;
+  padding-left: 8px !important;
+}
+
+.footer_d0ffq {
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+  padding: 16px 18px;
+}
+
+.githubLink_vu2io {
+  color: var(--text3);
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color .2s;
+  display: flex;
+}
+
+.githubLink_vu2io:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.mobileToggle_dut3c {
+  z-index: 200;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+@media (max-width: 768px) {
+  .sidebar_2hdsz {
+    transition: transform .3s;
+    transform: translateX(-100%);
+  }
+
+  .sidebarOpen_wzi7k {
+    transform: translateX(0);
+  }
+
+  .main_a7knp {
+    margin-left: 0;
+  }
+
+  .mobileToggle_dut3c {
+    display: flex;
+  }
+}
