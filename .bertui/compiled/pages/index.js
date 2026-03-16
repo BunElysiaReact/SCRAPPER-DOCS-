@@ -31,7 +31,10 @@ export default function Home() {
   }, "⭐ GitHub"), React.createElement(Link, {
     to: "/faq",
     className: s.btnPrimary
-  }, "F.A.Q")), React.createElement("div", {
+  }, "F.A.Q"), React.createElement(Link, {
+    to: "/help",
+    className: s.btnPrimary
+  }, "Help")), React.createElement("div", {
     className: styles.stats
   }, React.createElement("div", {
     className: styles.stat

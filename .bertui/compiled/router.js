@@ -85,11 +85,12 @@ import Page2 from './pages/dashboard.js';
 import Page3 from './pages/downloads.js';
 import Page4 from './pages/examples.js';
 import Page5 from './pages/faq.js';
-import Page6 from './pages/how-it-works.js';
-import Page7 from './pages/installation/browsers.js';
-import Page8 from './pages/installation/linux.js';
-import Page9 from './pages/installation/windows.js';
-import Page10 from './pages/limitations.js';
+import Page6 from './pages/help.js';
+import Page7 from './pages/how-it-works.js';
+import Page8 from './pages/installation/browsers.js';
+import Page9 from './pages/installation/linux.js';
+import Page10 from './pages/installation/windows.js';
+import Page11 from './pages/limitations.js';
 
 export const routes = [
   { path: '/', component: Page0, type: 'static' },
@@ -98,9 +99,10 @@ export const routes = [
   { path: '/downloads', component: Page3, type: 'static' },
   { path: '/examples', component: Page4, type: 'static' },
   { path: '/faq', component: Page5, type: 'static' },
-  { path: '/how-it-works', component: Page6, type: 'static' },
-  { path: '/installation/browsers', component: Page7, type: 'static' },
-  { path: '/installation/linux', component: Page8, type: 'static' },
-  { path: '/installation/windows', component: Page9, type: 'static' },
-  { path: '/limitations', component: Page10, type: 'static' }
+  { path: '/help', component: Page6, type: 'static' },
+  { path: '/how-it-works', component: Page7, type: 'static' },
+  { path: '/installation/browsers', component: Page8, type: 'static' },
+  { path: '/installation/linux', component: Page9, type: 'static' },
+  { path: '/installation/windows', component: Page10, type: 'static' },
+  { path: '/limitations', component: Page11, type: 'static' }
 ];

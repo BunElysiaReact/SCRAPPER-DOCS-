@@ -27,6 +27,7 @@ export default function Home() {
             <Link to="/installation/windows" className={s.btnSecondary}>🪟 Windows Setup</Link>
             <a href="https://github.com/BunElysiaReact/SCRAPY" className={s.btnGhost} target="_blank" rel="noreferrer">⭐ GitHub</a>
             <Link to="/faq" className={s.btnPrimary}>F.A.Q</Link>
+            <Link to="/help" className={s.btnPrimary}>Help</Link>
           </div>
 
           <div className={styles.stats}>
